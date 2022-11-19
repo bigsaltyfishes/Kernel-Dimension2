@@ -257,10 +257,10 @@ obj-$(CONFIG_SND_SOC_WSA881X) += wsa881x_dlkm.o
 wsa881x_dlkm-y := $(WSA881X_OBJS)
 
 
-obj-m  +=cirrus_wm_adsp_dlkm.o
+obj-$(CONFIG_CIRRUS_SMARTAMP)  +=cirrus_wm_adsp_dlkm.o
 cirrus_wm_adsp_dlkm-y := $(CIRRUS_WM_ADSP_OBJS)
 
-obj-m += cirrus_cs35l41_dlkm.o
+obj-$(CONFIG_SND_SOC_CS35l41) += cirrus_cs35l41_dlkm.o
 cirrus_cs35l41_dlkm-y:= $(CIRRUS_CS35L41_OBJS)
 
 
